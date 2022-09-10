@@ -1,4 +1,4 @@
-import { useAuth } from '@/hooks/auth'
+import { useAuth } from '../../hooks/auth'
 
 const Test = () => {
   const { logout, user } = useAuth({ middleware: 'auth' })

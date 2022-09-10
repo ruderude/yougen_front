@@ -1,7 +1,7 @@
-import AppLayout from '@/components/Layouts/AppLayout'
+import AppLayout from '../../components/Layouts/AppLayout'
 import Head from 'next/head'
 import useSWR from 'swr'
-import axios from '@/lib/axios'
+import axios from '../../lib/axios'
 
 const Users = () => {
     const { data: users, error } = useSWR('/api/users', () =>
